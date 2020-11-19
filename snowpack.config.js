@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: '/ywc18-homework',
+    public: '/',
     src: '/ywc18-homework/_dist_',
     // src: '/_dist_',
   },
