@@ -12,18 +12,21 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install Dependencies
-        uses: borales/actions-yarn@v2.0.0
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
-          cmd: install # will run `yarn install` command
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
 
-      - name: Build
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build # will run `yarn build` command
+      - name: Install dependencies and build
+        run: | 
+          yarn install
+          yarn publish
 
       - name: Deployment
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: main
+          FOLDER: build # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
