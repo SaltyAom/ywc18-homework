@@ -1,8 +1,12 @@
 name: Build and Deploy
+
 on:
   push:
     branches:
       - main
+
+env:
+  CI: true
 
 jobs:
   build-and-deploy:
@@ -31,6 +35,3 @@ jobs:
           BRANCH: main
           FOLDER: build # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
-
-      env:
-        CI: true
