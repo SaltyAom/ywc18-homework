@@ -1,8 +1,16 @@
 import { h, render } from 'preact'
 import 'preact/devtools'
 
-import App from './App.js'
+import { Landing } from '@pages'
+import { AppProvider, AppLayout } from '@layouts'
 
-import './index.css'
+import '@styles/base.styl'
 
-render(<App />, document.getElementById('root'))
+render(
+    <AppProvider>
+        <AppLayout>
+            <Landing />
+        </AppLayout>
+    </AppProvider>,
+    document.getElementById('root')
+)

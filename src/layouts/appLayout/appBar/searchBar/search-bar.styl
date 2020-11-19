@@ -1,0 +1,15 @@
+#search-bar
+    @apply flex flex-row w-full border border-gray-200 border-solid rounded-lg overflow-hidden
+    max-width 560px
+    height 40px
+
+    & > .input
+        @apply appearance-none flex flex-1 pl-4 border-0 rounded-lg outline-none
+
+    & > .action
+        @apply appearance-none bg-gray-100 border-0 rounded-r-lg
+        width 60px
+
+        & > .icon
+            @apply text-gray-700
+            transform scale(.8)
