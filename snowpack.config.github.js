@@ -1,8 +1,9 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: '/,
-    src: '/_dist_',
+    public: '/ywc18-homework',
+    src: '/ywc18-homework/_dist_',
+    // src: '/_dist_',
   },
   plugins: ['@snowpack/plugin-dotenv', '@prefresh/snowpack'],
   install: [
@@ -22,5 +23,6 @@ module.exports = {
   },
 
   alias: {
+    "web_modules": "ywc18-homework/web_modules"
   },
 };
