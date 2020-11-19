@@ -1,5 +1,5 @@
-import {h} from "../web_modules/preact.js";
-import {useState, useEffect} from "../web_modules/preact/hooks.js";
+import {h} from "../../web_modules/preact.js";
+import {useState, useEffect} from "../../web_modules/preact/hooks.js";
 import logo2 from "./logo.png.proxy.js";
 import "./App.css.proxy.js";
 function App2() {
