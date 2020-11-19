@@ -23,11 +23,11 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies and build
-        run: | 
+      - name: Install and Build
+        run: |
           yarn install
-          yarn publish
-
+          yarn build
+      
       - name: Deployment
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
