@@ -1,1 +1,0 @@
-export default "/ywc18-homework/_dist_/logo.png";
