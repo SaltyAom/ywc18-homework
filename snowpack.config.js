@@ -23,6 +23,8 @@ module.exports = {
   },
 
   alias: {
-    /* ... */
+    alias: {
+      "web_modules": "ywc18-homework/web_modules"
+    }
   },
 };
