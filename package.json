@@ -1,4 +1,10 @@
 {
+  "name": "ywc18",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SaltyAom/ywc18-homework.git",
+  "author": "SaltyAom <aomkirby123@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -20,5 +26,5 @@
     "prettier": "^2.0.5",
     "serve": "^11.3.2",
     "snowpack": "^2.17.1"
-  }
+  },
 }
