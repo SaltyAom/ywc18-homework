@@ -1,1 +1,0 @@
-import E from"./constant.js";export default r=>{r.on("@init",(()=>({search:"",isLoading:!1,isError:!1,useCurrentSearch:!1}))),r.on(E.UPDATE,((r,o)=>({search:o}))),r.on(E.LOADING,((r,o)=>({...r,isLoading:o}))),r.on(E.ERROR,((r,o)=>({...r,isError:o}))),r.on(E.USE_CURRENT,((r,o)=>({...r,useCurrentSearch:o})))};

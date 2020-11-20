@@ -1,0 +1,1 @@
+import{h as e}from"../../../../../web_modules/preact.js";export default({isOpen:s})=>s?e("p",{class:"status -open"},"เปิดอยู่"):e("p",{class:"status"},"ปิดอยู่");

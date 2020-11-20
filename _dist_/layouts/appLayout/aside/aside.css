@@ -10,3 +10,27 @@
   width: 100%;
   max-width: 340px;
 }
+
+@media (min-width: 860px) and (max-width: 992px) {
+  #aside {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 859.9px) {
+  #aside {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    border-radius: 0px;
+    position: absolute;
+    left: 0px;
+    top: 58px;
+    display: none;
+    max-width: 100%;
+    min-height: calc(100vh - 58px);
+  }
+
+  #aside.-open {
+    display: flex;
+  }
+}

@@ -44,3 +44,10 @@
   color: rgba(55, 65, 81, var(--tw-text-opacity));
   transform: scale(0.8);
 }
+
+@media (max-width: 859.9px) {
+  #search-bar {
+    border-radius: 0.5rem;
+    border-left-width: 1px;
+  }
+}

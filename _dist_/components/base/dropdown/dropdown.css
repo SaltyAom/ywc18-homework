@@ -46,6 +46,8 @@
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 1px;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   position: absolute;
@@ -53,13 +55,14 @@
   width: 100%;
   top: 48px;
   z-index: -1;
+  max-height: 420px;
   opacity: 0;
   transform: translateY(-8px);
   transition: transform 0.1s ease-out, opacity 0.1s ease-out, z-index 0.2s ease-out;
 }
 
 .dropdown > .select.-open {
-  z-index: 1;
+  z-index: 100;
   opacity: 1;
   transform: translateY(0);
 }
@@ -89,4 +92,14 @@
 .dropdown > .select > .option:hover, .dropdown > .select > .option:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+#dropdown-overlay {
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 90;
+  height: 100vh;
 }

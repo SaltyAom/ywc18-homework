@@ -9,11 +9,45 @@
   height: 58px;
 }
 
-.dropdown.-app-bar {
+#app-bar > .dropdown.-app-bar {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-right-width: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   max-width: 200px;
+}
+
+#app-bar > .filter {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border-width: 0px;
+  margin-left: 0.25rem;
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+#app-bar > .filter > .icon {
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+@media (max-width: 859.9px) {
+  #app-bar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #app-bar > .dropdown.-app-bar {
+    display: none;
+  }
+
+  #app-bar > .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

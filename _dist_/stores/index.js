@@ -1,1 +1,1 @@
-import{createStoreon as v}from"../../web_modules/storeon.js";import P from"./search/index.js";export const store=v([P]);export{default as StoreProvider}from"./provider.js";export{P as search};
+import{createStoreon as z}from"../../web_modules/storeon.js";import E,{APIAction as D}from"./api/index.js";import G,{SelectionAction as n}from"./selection/index.js";export const store=z([E,G]);export{E as api,D as APIAction,G as selection,n as SelectionAction};export{default as StoreProvider}from"./provider.js";

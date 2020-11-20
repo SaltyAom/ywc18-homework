@@ -1,8 +1,41 @@
 #layout {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   font-size: 1.125rem;
   line-height: 1.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width: 859.9px) {
+  #display.-filter-open {
+    display: none;
+  }
+}
+
+#loading {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  position: fixed;
+  left: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+  width: 100%;
+  z-index: 110;
+  top: 114px;
+  height: calc(100vh - 114px);
 }

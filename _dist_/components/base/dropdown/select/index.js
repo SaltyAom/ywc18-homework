@@ -1,1 +1,1 @@
-import{h as o}from"../../../../../web_modules/preact.js";export default({onSelect:t,option:e})=>o("button",{onClick:()=>{t(e)},class:"option"},e);
+import{h as e}from"../../../../../web_modules/preact.js";export default({onSelect:o,option:t,index:n})=>e("button",{onClick:()=>{o(n)},class:"option"},t);

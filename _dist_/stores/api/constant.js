@@ -1,0 +1,1 @@
+var P,I;(I=P||(P={})).UPDATE="UPDATE_API",I.LOADING="UPDATE_API_LOADING";export default P;

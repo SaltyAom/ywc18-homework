@@ -1,1 +1,1 @@
-import{h as o}from"../../../web_modules/preact.js";import{StoreProvider as w}from"../../stores/index.js";export default({children:e})=>o(w,null,e);
+import{h as e}from"../../../web_modules/preact.js";import{StoreProvider as v}from"../../stores/index.js";export default({children:r})=>e(v,null,r);

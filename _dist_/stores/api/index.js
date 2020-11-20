@@ -1,0 +1,1 @@
+import D from"./constant.js";export{D as APIAction};export default o=>{o.on("@init",(()=>({categories:[],provinces:[],priceRange:[],merchants:[],isLoading:!0}))),o.on(D.UPDATE,((o,n)=>({...o,...n}))),o.on(D.LOADING,((o,n)=>({...o,isLoading:n})))};

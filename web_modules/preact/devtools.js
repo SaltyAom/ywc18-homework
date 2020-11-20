@@ -1,1 +1,1 @@
-import{n as H,p as K,d as W}from"../common/preact.module-eb550cef.js";"undefined"!=typeof window&&window.__PREACT_DEVTOOLS__&&window.__PREACT_DEVTOOLS__.attachPreact("10.5.7",H,{Fragment:K,Component:W});
+import{n as M,p as e_,d as u_}from"../common/preact.module-eb550cef.js";"undefined"!=typeof window&&window.__PREACT_DEVTOOLS__&&window.__PREACT_DEVTOOLS__.attachPreact("10.5.7",M,{Fragment:e_,Component:u_});

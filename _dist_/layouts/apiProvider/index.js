@@ -1,0 +1,1 @@
+import{useEffect as A}from"../../../web_modules/preact/hooks.js";import{useStoreon as o}from"../../../web_modules/storeon/preact.js";import{APIAction as D}from"../../stores/api/index.js";export default({children:e})=>{let{dispatch:t}=o();return A((()=>{fetch("https://panjs.com/ywc18.json").then((e=>e.json())).then((e=>{t(D.UPDATE,e)})).finally((()=>{t(D.LOADING,!1)}))}),[]),e};

@@ -1,0 +1,1 @@
+import{h as e}from"../../../../../web_modules/preact.js";export default({children:r})=>e("div",{class:"chip"},r);

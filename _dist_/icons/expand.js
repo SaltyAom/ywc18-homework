@@ -1,1 +1,1 @@
-import{h as o}from"../../web_modules/preact.js";import p from"./base.js";export default()=>o(p,{outline:!0},o("polyline",{points:"6 9 12 15 18 9"}));
+import{h as e}from"../../web_modules/preact.js";import h from"./base.js";export default()=>e(h,{outline:!0},e("polyline",{points:"6 9 12 15 18 9"}));

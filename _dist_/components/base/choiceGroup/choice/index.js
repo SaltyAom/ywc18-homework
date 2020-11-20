@@ -1,1 +1,1 @@
-import{h as o}from"../../../../../web_modules/preact.js";import"./choice.css.proxy.js";export default({value:c,onSelect:a,active:e=!1})=>o("button",{class:"choice "+(e?"-active":""),onClick:()=>{a(c)}},o("div",{class:"radio"},o("div",{class:"activation"})),o("p",{class:"value"},c));
+import{h as e}from"../../../../../web_modules/preact.js";import"./choice.css.proxy.js";export default({value:c,onSelect:a,active:i=!1,index:o})=>e("button",{class:"choice "+(i?"-active":""),onClick:()=>{a(o)}},e("div",{class:"radio"},e("div",{class:"activation"})),e("p",{class:"value"},c));

@@ -1,0 +1,173 @@
+.card {
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+  margin-bottom: 0.5rem;
+}
+
+.card > .figure {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  display: block;
+  margin: 0px;
+  overflow: hidden;
+  width: 216px;
+  height: 216px;
+}
+
+.card > .figure > .image {
+  display: block;
+  height: 100%;
+  margin: 0px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card > .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.card > .content > .header, .card > .content > .detail {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+  width: 100%;
+}
+
+.card > .content > .header > .row, .card > .content > .detail > .row {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+
+.card > .content > .header > .row.-title, .card > .content > .detail > .row.-title {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card > .content > .header > .row > .title, .card > .content > .detail > .row > .title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.card > .content > .header > .row > .status, .card > .content > .detail > .row > .status {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0px;
+  margin-left: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.card > .content > .header > .row > .status.-open, .card > .content > .detail > .row > .status.-open {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.card > .content > .header > .row > .status.-open,
+.card > .content > .detail > .row > .status.-open {
+  background-color: var(--secondary);
+}
+
+.card > .content > .header > .row > .detail, .card > .content > .detail > .row > .detail {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.card > .content > .header > .row > .detail > .bold, .card > .content > .detail > .row > .detail > .bold {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.card > .content > .header > .row > .chip, .card > .content > .detail > .row > .chip {
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+}
+
+.card > .content > .header > .row > .chip,
+.card > .content > .detail > .row > .chip {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  border-color: var(--secondary);
+}
+
+.card > .content > .header > .row > .chip > .icon,
+.card > .content > .detail > .row > .chip > .icon {
+  color: var(--secondary);
+}
+
+.card > .content > .header {
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  border-style: solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+@media (max-width: 767.9px) {
+  .card {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .card > .figure {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: unset;
+  }
+
+  .card > .figure > .image {
+    display: block;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}

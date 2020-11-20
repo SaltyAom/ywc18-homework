@@ -1,1 +1,1 @@
-import{h as o}from"../../web_modules/preact.js";import{StoreContext as _}from"../../web_modules/storeon/preact.js";import{store as k}from"./index.js";export default({children:e})=>o(_.Provider,{value:k},e);
+import{h as e}from"../../web_modules/preact.js";import{StoreContext as J}from"../../web_modules/storeon/preact.js";import{store as K}from"./index.js";export default({children:r})=>e(J.Provider,{value:K},r);
