@@ -1,6 +1,6 @@
 import { h } from 'preact'
 
-import { Search as SearchIcon } from '@icons'
+import { SearchIcon } from '@icons'
 
 import './search-bar.styl'
 

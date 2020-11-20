@@ -70,13 +70,21 @@
         "baseUrl": ".",
         "paths": {
             "@app": ["./src"],
+            "@app/*": ["./src/*"],
             "@pages": ["./src/pages"],
+            "@pages/*": ["./src/pages/*"],
             "@styles": ["./src/styles"],
+            "@styles/*": ["./src/styles/*"],
             "@layouts": ["./src/layouts"],
+            "@layouts/*": ["./src/layouts/*"],
             "@components": ["./src/components"],
+            "@components/*": ["./src/components/*"],
             "@icons": ["./src/icons"],
+            "@icons/*": ["./src/icons/*"],
             "@stores": ["./src/stores"],
-            "@libs": ["./src/libs"]
+            "@stores/*": ["./src/stores/*"],
+            "@libs": ["./src/libs"],
+            "@libs/*": ["./src/libs/*"]
         },
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,

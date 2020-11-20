@@ -1,0 +1,31 @@
+.dropdown
+    @apply relative flex flex-row justify-between items-center appearance-none w-full text-gray-600 px-4 py-2 bg-transparent border border-gray-200 border-solid rounded-lg outline-none
+    height 42px
+
+    & > .title
+        @apply flex flex-row justify-start items-center m-0
+
+        & > .icon
+            @apply mr-1
+
+    & > .select
+        @apply absolute w-full left-0 bg-white py-2 border border-gray-200 border-solid rounded-lg
+        top 48px
+        z-index -1
+        opacity 0
+        transform translateY(-8px)
+        transition transform .1s ease-out, opacity .1s ease-out, z-index .2s ease-out
+
+        &.-open
+            z-index 1
+            opacity 1
+            transform translateY(0)
+
+        & > .option
+            @apply appearance-none w-full px-4 py-2 text-gray-600 text-left font-semibold bg-white border-0 outline-none cursor-pointer
+            transition background-color .1s ease-out
+
+            &:hover,
+            &:focus
+                @apply bg-gray-100
+                

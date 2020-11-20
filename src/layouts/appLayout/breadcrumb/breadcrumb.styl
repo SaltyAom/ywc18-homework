@@ -1,0 +1,15 @@
+#breadcrumb
+    @apply flex flex-row w-full text-white px-4 py-4
+    background-color var(--primary)
+
+    & > .path
+        @apply my-0 mr-1
+
+        &.-link
+            @apply underline
+
+        &.-current
+            @apply font-semibold
+            
+    & > .seperator
+        @apply my-0 mx-1
