@@ -12,6 +12,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0.75rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
   padding-top: 0.5rem;

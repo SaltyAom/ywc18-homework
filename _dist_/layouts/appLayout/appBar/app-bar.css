@@ -13,5 +13,7 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-right-width: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   max-width: 200px;
 }
