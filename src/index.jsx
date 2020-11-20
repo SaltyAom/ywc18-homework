@@ -5,6 +5,7 @@ import { Landing } from '@pages'
 import { AppProvider, AppLayout } from '@layouts'
 
 import '@styles/base.styl'
+import '@styles/abstraction.styl'
 
 render(
     <AppProvider>

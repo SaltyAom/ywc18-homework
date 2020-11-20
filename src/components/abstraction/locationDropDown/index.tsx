@@ -16,7 +16,13 @@ const LocationDropDown: LocationDropDownComponent = (props) => {
     }
 
     return (
-        <DropDown name="Location" value={value} onSelect={onSelect} Icon={<LocationIcon />} {...rest}>
+        <DropDown
+            name="Location"
+            value={value}
+            onSelect={onSelect}
+            Icon={<LocationIcon />}
+            {...rest}
+        >
             พื้นที่ใกล้ฉัน
         </DropDown>
     )

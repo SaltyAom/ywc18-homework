@@ -1,0 +1,24 @@
+.choice
+    @apply appearance-none flex flex-row items-center w-full py-2 border-0 bg-transparent cursor-pointer outline-none
+
+    &.-active
+        & > .radio
+            border-color var(--link)
+
+            & > .activation
+                opacity 1
+
+    & > .radio
+        @apply mr-2 border border-gray-300 border-solid
+        width 1.25em
+        height 1.25em
+        padding 3px
+        border-radius .75em
+
+        & > .activation
+            @apply w-full h-full rounded-full
+            opacity 0
+            background-color var(--link)
+
+    & > .value
+        @apply m-0 text-gray-700
