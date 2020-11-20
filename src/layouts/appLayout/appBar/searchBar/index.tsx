@@ -19,10 +19,14 @@ const SearchBar = () => {
     let { dispatch } = useStoreon<SelectionStore, SelectionEvent>(),
         ref = useRef<HTMLInputElement>()
 
-    let handleSearch = () => dispatch(SelectionAction.SEARCH, ref.current.value)
+    let handleSearch = () => dispatch(SelectionAction.SEARCH, ref.current.value),
+        handleSubmit = (event: Event) => {
+            event.preventDefault()
+            ref.current.blur()
+        }
 
     return (
-        <form id="search-bar">
+        <form id="search-bar" onSubmit={handleSubmit}>
             <input
                 ref={ref}
                 class="input"
