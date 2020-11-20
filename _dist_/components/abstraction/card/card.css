@@ -8,6 +8,7 @@
   flex-direction: row;
   flex: 1 1 0%;
   margin-bottom: 0.5rem;
+  overflow: hidden;
 }
 
 .card > .figure {
@@ -148,6 +149,7 @@
   .card {
     flex-direction: column;
     margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .card > .figure {
@@ -169,5 +171,9 @@
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
+  }
+
+  .card > .content > .detail {
+    padding-top: 1rem;
   }
 }
