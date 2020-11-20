@@ -84,7 +84,9 @@
             "@stores": ["./src/stores"],
             "@stores/*": ["./src/stores/*"],
             "@libs": ["./src/libs"],
-            "@libs/*": ["./src/libs/*"]
+            "@libs/*": ["./src/libs/*"],
+            "@models": ["./src/models"],
+            "@models/*": ["./src/models/*"]
         },
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
