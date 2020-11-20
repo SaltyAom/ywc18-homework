@@ -2,7 +2,7 @@
 module.exports = {
     mount: {
         public: '/',
-        src: '/_dist_',
+        src: '/_dist_'
     },
     plugins: [
         '@snowpack/plugin-dotenv',
@@ -35,5 +35,5 @@ module.exports = {
         '@icons': './src/icons',
         '@stores': './src/stores',
         '@libs': './src/libs'
-    },
+    }
 }

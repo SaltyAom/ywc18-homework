@@ -1,5 +1,5 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
-const baseConfig = require('./snowpack.config')
+const baseConfig = require('./snowpack.config.production')
 
 module.exports = {
     ...baseConfig,
