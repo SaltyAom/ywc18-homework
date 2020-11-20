@@ -1,7 +1,1 @@
-import {createStoreon} from "../../web_modules/storeon.js";
-import search2 from "./search/index.js";
-export const store = createStoreon([search2]);
-export {default as StoreProvider} from "./provider.js";
-export {
-  search2 as search
-};
+import{createStoreon as v}from"../../web_modules/storeon.js";import P from"./search/index.js";export const store=v([P]);export{default as StoreProvider}from"./provider.js";export{P as search};

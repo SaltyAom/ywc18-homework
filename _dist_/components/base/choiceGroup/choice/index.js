@@ -1,18 +1,1 @@
-import {h} from "../../../../../web_modules/preact.js";
-import "./choice.css.proxy.js";
-const Choice = ({value, onSelect, active = false}) => {
-  let select = () => {
-    onSelect(value);
-  };
-  return /* @__PURE__ */ h("button", {
-    class: `choice ${active ? "-active" : ""}`,
-    onClick: select
-  }, /* @__PURE__ */ h("div", {
-    class: "radio"
-  }, /* @__PURE__ */ h("div", {
-    class: "activation"
-  })), /* @__PURE__ */ h("p", {
-    class: "value"
-  }, value));
-};
-export default Choice;
+import{h as o}from"../../../../../web_modules/preact.js";import"./choice.css.proxy.js";export default({value:c,onSelect:a,active:e=!1})=>o("button",{class:"choice "+(e?"-active":""),onClick:()=>{a(c)}},o("div",{class:"radio"},o("div",{class:"activation"})),o("p",{class:"value"},c));

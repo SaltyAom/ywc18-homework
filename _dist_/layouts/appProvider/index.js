@@ -1,6 +1,1 @@
-import {h} from "../../../web_modules/preact.js";
-import {StoreProvider} from "../../stores/index.js";
-const AppProvider = ({children}) => {
-  return /* @__PURE__ */ h(StoreProvider, null, children);
-};
-export default AppProvider;
+import{h as o}from"../../../web_modules/preact.js";import{StoreProvider as w}from"../../stores/index.js";export default({children:e})=>o(w,null,e);

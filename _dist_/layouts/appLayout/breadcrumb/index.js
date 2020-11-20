@@ -1,15 +1,1 @@
-import {Fragment, h} from "../../../../web_modules/preact.js";
-import "./breadcrumb.css.proxy.js";
-const Breadcrumb = () => {
-  let paths = ["\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E23\u0E01", "\u0E04\u0E49\u0E19\u0E2B\u0E32"];
-  return /* @__PURE__ */ h("nav", {
-    id: "breadcrumb"
-  }, paths.map((path, index) => /* @__PURE__ */ h(Fragment, {
-    key: path
-  }, /* @__PURE__ */ h("p", {
-    class: `path ${index < paths.length - 1 ? "-link" : "-current"}`
-  }, path), index < paths.length - 1 && /* @__PURE__ */ h("p", {
-    class: "seperator"
-  }, " / "))));
-};
-export default Breadcrumb;
+import{Fragment as g,h as o}from"../../../../web_modules/preact.js";import"./breadcrumb.css.proxy.js";export default()=>{let r=["หน้าแรก","ค้นหา"];return o("nav",{id:"breadcrumb"},r.map(((e,t)=>o(g,{key:e},o("p",{class:"path "+(t<r.length-1?"-link":"-current")},e),t<r.length-1&&o("p",{class:"seperator"}," / ")))))};

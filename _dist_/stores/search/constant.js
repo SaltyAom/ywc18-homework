@@ -1,8 +1,1 @@
-var Search;
-(function(Search2) {
-  Search2["UPDATE"] = "UPDATE_SEARCH";
-  Search2["LOADING"] = "UPDATE_IS_LOADING";
-  Search2["ERROR"] = "UPDATE_IS_ERROR";
-  Search2["USE_CURRENT"] = "USE_CURRENT_SEARCH";
-})(Search || (Search = {}));
-export default Search;
+var E,R;(R=E||(E={})).UPDATE="UPDATE_SEARCH",R.LOADING="UPDATE_IS_LOADING",R.ERROR="UPDATE_IS_ERROR",R.USE_CURRENT="USE_CURRENT_SEARCH";export default E;

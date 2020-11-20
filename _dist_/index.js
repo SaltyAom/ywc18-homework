@@ -1,7 +1,1 @@
-import {h, render} from "../web_modules/preact.js";
-import "../web_modules/preact/devtools.js";
-import {Landing} from "./pages/index.js";
-import {AppProvider, AppLayout} from "./layouts/index.js";
-import "./styles/base.css.proxy.js";
-import "./styles/abstraction.css.proxy.js";
-render(/* @__PURE__ */ h(AppProvider, null, /* @__PURE__ */ h(AppLayout, null, /* @__PURE__ */ h(Landing, null))), document.getElementById("root"));
+import{h as o,render as m}from"../web_modules/preact.js";import"../web_modules/preact/devtools.js";import{Landing as i}from"./pages/index.js";import{AppProvider as a,AppLayout as d}from"./layouts/index.js";import"./styles/base.css.proxy.js";import"./styles/abstraction.css.proxy.js";m(o(a,null,o(d,null,o(i,null))),document.getElementById("root"));
