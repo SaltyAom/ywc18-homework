@@ -1,10 +1,10 @@
 export interface Merchant {
     shopNameTH: string
     categoryName: string
-    subCategoryName: string
+    subcategoryName: string
     coverImageId: string
     facilities: string[]
-    priceLevel: number
+    priceLevel: 0 | 1 | 2 | 3 | 4
     isOpen: "Y" | "N"
     highlightText: string
     recommendedItems: string[]

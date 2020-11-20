@@ -2,9 +2,9 @@ import { h } from 'preact'
 
 import { DropDownSelectComponent } from './types'
 
-const Select: DropDownSelectComponent = ({ onSelect, option }) => {
+const Select: DropDownSelectComponent = ({ onSelect, option, index }) => {
     let select = () => {
-        onSelect(option)
+        onSelect(index)
     }
 
     return (

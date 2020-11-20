@@ -9,15 +9,16 @@
             @apply mr-1
 
     & > .select
-        @apply absolute w-full left-0 bg-white py-2 border border-gray-200 border-solid rounded-lg
+        @apply absolute w-full left-0 bg-white py-2 border border-gray-200 border-solid rounded-lg overflow-x-hidden overflow-y-auto
         top 48px
         z-index -1
+        max-height 420px
         opacity 0
         transform translateY(-8px)
         transition transform .1s ease-out, opacity .1s ease-out, z-index .2s ease-out
 
         &.-open
-            z-index 1
+            z-index 100
             opacity 1
             transform translateY(0)
 
@@ -29,3 +30,7 @@
             &:focus
                 @apply bg-gray-100
                 
+#dropdown-overlay
+    @apply fixed top-0 left-0 w-full bg-transparent
+    z-index 90
+    height 100vh

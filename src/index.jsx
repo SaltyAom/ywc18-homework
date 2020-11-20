@@ -2,16 +2,18 @@ import { h, render } from 'preact'
 import 'preact/devtools'
 
 import { Landing } from '@pages'
-import { AppProvider, AppLayout } from '@layouts'
+import { AppProvider, AppLayout, APIProvider } from '@layouts'
 
 import '@styles/base.styl'
 import '@styles/abstraction.styl'
 
 render(
     <AppProvider>
-        <AppLayout>
-            <Landing />
-        </AppLayout>
+        <APIProvider>
+            <AppLayout>
+                <Landing />
+            </AppLayout>
+        </APIProvider>
     </AppProvider>,
     document.getElementById('root')
 )

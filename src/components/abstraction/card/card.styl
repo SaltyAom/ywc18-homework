@@ -1,0 +1,69 @@
+.card
+    @apply flex flex-row flex-1 border border-gray-200 border-solid mb-2 rounded
+    
+    & > .figure
+        @apply block bg-gray-200 m-0 overflow-hidden
+        width 216px
+        height 216px
+
+        & > .image
+            @apply block m-0 w-full h-full
+            object-fit cover
+            object-position center
+
+    & > .content
+        @apply flex flex-col flex-1
+
+        & > .header,
+        & > .detail
+            @apply flex flex-col w-full pt-2 pl-4 text-gray-700
+
+            & > .row
+                @apply flex flex-row w-full mb-1 text-base
+
+                &.-title
+                    @apply py-2
+
+                & > .title
+                    @apply text-xl text-gray-700 m-0
+
+                & > .status
+                    @apply flex m-0 ml-2 px-2 py-1 rounded text-sm text-gray-500 bg-gray-200 font-semibold items-center
+
+                    &.-open
+                        @apply text-white
+                        background-color var(--secondary)
+
+                & > .detail
+                    @apply text-gray-400 text-base m-0
+
+                    & > .bold
+                        @apply text-gray-700 font-semibold
+
+                & > .chip
+                    @apply flex items-center border p-1 border-solid mr-1
+                    width 28px
+                    height 28px
+                    border-radius 14px
+                    border-color var(--secondary)
+
+                    & > .icon
+                        color var(--secondary)
+
+        & > .header
+            @apply border-gray-300 py-2 border-solid
+            border-width 0
+            border-bottom-width 1px
+
+    @media (max-width 767.9px)
+        &
+            @apply flex-col mb-6
+
+            & > .figure
+                @apply block bg-gray-200 m-0 overflow-hidden w-full
+                height unset
+
+                & > .image
+                    @apply block m-0 w-full h-full
+                    object-fit cover
+                    object-position center

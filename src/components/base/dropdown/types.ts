@@ -5,7 +5,8 @@ export interface DropDownProps {
     className?: string
     Icon?: VNode
     value: string[]
-    onSelect: (value: string) => void
+    onSelect: (index: number) => void
+    active: number
 }
 
 export type DropDownComponent = FunctionComponent<DropDownProps>

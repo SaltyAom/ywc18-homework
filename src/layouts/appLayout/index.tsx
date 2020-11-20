@@ -1,5 +1,9 @@
 import { h, FunctionComponent, Fragment } from 'preact'
 
+import { useStoreon } from 'storeon/preact'
+import { APIEvent, APIStore } from '@stores/api'
+import { SelectionEvent, SelectionStore } from '@stores/selection'
+
 import AppBar from './appBar'
 import Breadcrumb from './breadcrumb'
 import Aside from './aside'
@@ -7,6 +11,11 @@ import Aside from './aside'
 import './app-layout.styl'
 
 const AppLayout: FunctionComponent = ({ children }) => {
+    let { isLoading } = useStoreon<APIStore, APIEvent>('isLoading'),
+        { isFilterOpen } = useStoreon<SelectionStore, SelectionEvent>(
+            'isFilterOpen'
+        )
+
     return (
         <Fragment>
             <AppBar />
@@ -15,11 +24,13 @@ const AppLayout: FunctionComponent = ({ children }) => {
                 ผลการค้นหา ร้านอาหารและเครื่องดื่มทั้งหมด
             </h3>
             <br />
-            <main id="layout">
+            {isLoading && <section id="loading">Loading...</section>}
+            <section id="layout" style={{ opacity: !isLoading ? 1 : 0 }}>
                 <Aside />
-                {children}
-            </main>
-            <footer></footer>
+                <main id="display" class={isFilterOpen ? '-filter-open' : ''}>
+                    {children}
+                </main>
+            </section>
         </Fragment>
     )
 }

@@ -34,6 +34,7 @@ module.exports = {
         '@components': './src/components',
         '@icons': './src/icons',
         '@stores': './src/stores',
-        '@libs': './src/libs'
+        '@libs': './src/libs',
+        '@models': './src/models'
     }
 }

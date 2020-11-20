@@ -2,7 +2,8 @@ import { FunctionComponent } from 'preact'
 
 export interface DropDownSelectProps {
     option: string
-    onSelect: (value: string) => void
+    index: number
+    onSelect: (index: number) => void
 }
 
 export type DropDownSelectComponent = FunctionComponent<DropDownSelectProps>

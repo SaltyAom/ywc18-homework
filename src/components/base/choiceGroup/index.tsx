@@ -1,5 +1,4 @@
 import { h } from 'preact'
-import { useState } from 'preact/hooks'
 
 import Choice from './choice'
 
@@ -7,24 +6,24 @@ import { ChoiceGroupComponent } from './types'
 
 import './choice-group.styl'
 
-const ChoiceGroup: ChoiceGroupComponent = ({ choices = [], onSelect }) => {
-    let [selected, updateSelected] = useState('')
-
-    let handleSelect = (value: string) => {
-        if (value === selected) return
-
-        updateSelected(value)
-        onSelect(value)
+const ChoiceGroup: ChoiceGroupComponent = ({
+    choices = [],
+    active = 0,
+    onSelect
+}) => {
+    let handleSelect = (selected: number) => {
+        onSelect(active === selected ? -1 : selected)
     }
 
     return (
         <section class="choice-group">
-            {choices.map((choice) => (
+            {choices.map((choice, index) => (
                 <Choice
                     key={choice}
                     value={choice}
                     onSelect={handleSelect}
-                    active={selected === choice}
+                    active={index === active}
+                    index={index}
                 />
             ))}
         </section>

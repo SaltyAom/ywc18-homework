@@ -4,9 +4,9 @@ import { ChoiceComponent } from './types'
 
 import './choice.styl'
 
-const Choice: ChoiceComponent = ({ value, onSelect, active = false }) => {
+const Choice: ChoiceComponent = ({ value, onSelect, active = false, index }) => {
     let select = () => {
-        onSelect(value)
+        onSelect(index)
     }
 
     return (

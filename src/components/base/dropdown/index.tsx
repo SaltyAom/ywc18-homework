@@ -1,5 +1,5 @@
-import { h } from 'preact'
-import { useReducer } from 'preact/hooks'
+import { Fragment, h } from 'preact'
+import { useReducer, useState } from 'preact/hooks'
 
 import DropDownSelect from './select'
 
@@ -13,35 +13,37 @@ const DropDown: DropDownComponent = ({
     name,
     className = '',
     Icon = null,
-    value = [],
+    value = [''],
     onSelect = () => null,
-    children
+    active = 0
 }) => {
     let [isOpen, toggleOpen] = useReducer((state) => !state, false)
 
     return (
-        <button
-            class={`dropdown ${className}`}
-            onClick={toggleOpen}
-            tabIndex={isOpen ? -1 : 1}
-        >
-            <p class="title" for={name}>
-                {Icon}
-                <span>
-                    {children}
-                </span>
-            </p>
-            <ExpandIcon />
-            <div class={`select ${isOpen ? '-open' : ''}`}>
-                {value.map((option) => (
-                    <DropDownSelect
-                        key={value}
-                        option={option}
-                        onSelect={onSelect}
-                    />
-                ))}
-            </div>
-        </button>
+        <Fragment>
+            {isOpen && <div id="dropdown-overlay" onClick={toggleOpen} />}
+            <button
+                class={`dropdown ${className}`}
+                onClick={toggleOpen}
+                tabIndex={isOpen ? -1 : 1}
+            >
+                <p class="title" for={name}>
+                    {Icon}
+                    <span>{value[active]}</span>
+                </p>
+                <ExpandIcon />
+                <div class={`select ${isOpen ? '-open' : ''}`}>
+                    {value.map((option, index) => (
+                        <DropDownSelect
+                            key={value}
+                            option={option}
+                            index={index}
+                            onSelect={onSelect}
+                        />
+                    ))}
+                </div>
+            </button>
+        </Fragment>
     )
 }
 

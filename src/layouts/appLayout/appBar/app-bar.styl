@@ -2,6 +2,25 @@
     @apply flex flex-row justify-center items-center w-full bg-white
     height 58px
 
-.dropdown.-app-bar
-    @apply border-r-0 rounded-r-none my-0
-    max-width 200px
+    & > .dropdown.-app-bar
+        @apply border-r-0 rounded-r-none my-0
+        max-width 200px
+
+    & > .filter
+        @apply ml-1 appearance-none bg-transparent border-0
+        display none
+        width 40px
+        height 40px
+
+        & > .icon
+            @apply text-gray-600
+
+    @media (max-width 859.9px)
+        &
+            @apply px-4
+
+            & > .dropdown.-app-bar
+                display none
+
+            & > .filter
+                @apply flex justify-center items-center

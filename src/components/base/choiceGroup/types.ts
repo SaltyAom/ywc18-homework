@@ -2,7 +2,8 @@ import { FunctionComponent } from 'preact'
 
 export interface ChoiceGroupProps {
     choices: string[]
-    onSelect: (value: string) => void
+    active: number
+    onSelect: (value: number) => void
 }
 
 export type ChoiceGroupComponent = FunctionComponent<ChoiceGroupProps>

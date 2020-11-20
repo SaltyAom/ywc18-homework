@@ -1,3 +1,7 @@
+export { default as CarIcon } from './car'
+export { default as CreateIcon } from './create'
 export { default as ExpandIcon } from './expand'
+export { default as FilterIcon } from './filter'
 export { default as LocationIcon } from './location'
+export { default as PetIcon } from './pet'
 export { default as SearchIcon } from './search'

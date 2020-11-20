@@ -1,3 +1,20 @@
+$appbar-height = 58px
+
 #aside
     @apply flex flex-col w-full border border-gray-200 border-solid p-4 rounded
     max-width 340px
+
+    @media (min-width 860px) and (max-width 992px)
+        &
+            max-width 240px
+
+    @media (max-width 859.9px)
+        &
+            @apply absolute bg-white left-0 rounded-none
+            top $appbar-height
+            display none
+            max-width 100%
+            min-height "calc(100vh - %s)" % $appbar-height
+
+            &.-open
+                @apply flex

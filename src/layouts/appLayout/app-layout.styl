@@ -1,2 +1,17 @@
 #layout
-    @apply flex flex-row px-4 text-lg
+    @apply flex flex-row px-4 text-lg items-start
+
+#display
+    @apply flex flex-col w-full px-2
+
+    @media (max-width 859.9px)
+        &.-filter-open
+            display none
+
+$appbar-height = 58px + 56px
+
+#loading
+    @apply fixed left-0 flex justify-center items-center w-full bg-white text-2xl text-gray-700
+    z-index 110
+    top $appbar-height
+    height "calc(100vh - %s)" % $appbar-height
