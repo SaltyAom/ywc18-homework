@@ -2,6 +2,7 @@
   "imports": {
     "preact": "./preact.js",
     "preact/devtools": "./preact/devtools.js",
+    "preact/hooks": "./preact/hooks.js",
     "storeon": "./storeon.js",
     "storeon/preact": "./storeon/preact.js"
   }

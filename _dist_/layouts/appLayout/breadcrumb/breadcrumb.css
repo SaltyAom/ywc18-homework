@@ -1,0 +1,33 @@
+#breadcrumb {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%;
+  background-color: var(--primary);
+}
+
+#breadcrumb > .path {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0.25rem;
+}
+
+#breadcrumb > .path.-link {
+  text-decoration: underline;
+}
+
+#breadcrumb > .path.-current {
+  font-weight: 600;
+}
+
+#breadcrumb > .seperator {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
