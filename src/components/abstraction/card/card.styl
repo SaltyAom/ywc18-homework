@@ -1,5 +1,5 @@
 .card
-    @apply flex flex-row flex-1 border border-gray-200 border-solid mb-2 rounded
+    @apply flex flex-row flex-1 border border-gray-200 border-solid mb-2 rounded overflow-hidden
     
     & > .figure
         @apply block bg-gray-200 m-0 overflow-hidden
@@ -57,7 +57,7 @@
 
     @media (max-width 767.9px)
         &
-            @apply flex-col mb-6
+            @apply flex-col mb-6 pb-2
 
             & > .figure
                 @apply block bg-gray-200 m-0 overflow-hidden w-full
@@ -67,3 +67,7 @@
                     @apply block m-0 w-full h-full
                     object-fit cover
                     object-position center
+
+            & > .content
+                & > .detail
+                    @apply pt-4
